@@ -5,13 +5,17 @@ import './App.css'
 
 function App() {
 
-  let [counter, setCounter] = useState(15)
+  const [counter, setCounter] = useState(15)
   // useState is a Hook, counter is variable and setCounter is a function
   // let counter = 15
 
   const AddValue = () => {
     // counter = counter + 1
-    setCounter(counter + 1)
+    // prevCounter is used to get previous value stored in counter variable
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
+    setCounter(prevCounter => prevCounter + 1)
   }
 
   const removeValue = () => {
